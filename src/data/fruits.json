@@ -1,0 +1,74 @@
+[
+  {
+    "fruit": "apple",
+    "emoji": "🍎"
+  },
+  {
+    "fruit": "banana",
+    "emoji": "🍌"
+  },
+  {
+    "fruit": "orange",
+    "emoji": "🍊"
+  },
+  {
+    "fruit": "grape",
+    "emoji": "🍇"
+  },
+  {
+    "fruit": "strawberry",
+    "emoji": "🍓"
+  },
+  {
+    "fruit": "blueberry",
+    "emoji": "🫐"
+  },
+  {
+    "fruit": "pineapple",
+    "emoji": "🍍"
+  },
+  {
+    "fruit": "mango",
+    "emoji": "🥭"
+  },
+  {
+    "fruit": "kiwi",
+    "emoji": "🥝"
+  },
+  {
+    "fruit": "peach",
+    "emoji": "🍑"
+  },
+  {
+    "fruit": "cherry",
+    "emoji": "🍒"
+  },
+  {
+    "fruit": "watermelon",
+    "emoji": "🍉"
+  },
+  {
+    "fruit": "cantaloupe",
+    "emoji": "🍈"
+  },
+  {
+    "fruit": "honeydew",
+    "emoji": "🍈"
+  },
+  {
+    "fruit": "lemon",
+    "emoji": "🍋"
+  },
+  {
+    "fruit": "lime",
+    "emoji": "🍋"
+  },
+  {
+    "fruit": "avocado",
+    "emoji": "🥑"
+  },
+  {
+    "fruit": "pear",
+    "emoji": "🍐"
+  }
+]

@@ -1,0 +1,11 @@
+{% extends "_baseLayout.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+  {% if entry %}
+    <h1>{{ entry.title }}</h1>
+  {% else %}
+    <h1>No entry found</h1>
+  {% endif %}
+{% endblock %}

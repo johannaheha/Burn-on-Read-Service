@@ -1,0 +1,20 @@
+{% extends "_baseLayout.html" %}
+
+{% block body %}
+  <h1>Fruits</h1>
+
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Emoji</th>
+    </thead>
+    <tbody>
+      {% for item in fruitsData %}
+        <tr>
+          <td>{{ item.fruit }}</td>
+          <td>{{ item.emoji }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

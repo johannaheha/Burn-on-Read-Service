@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Message ersteller</title>
+  </head>
+  <body>
+    <h1>Secret Message ersteller!</h1>
+    <p>
+      erstelle hier ein Secret. Du bekommst einen Link, den du später
+      <b>einmalig</b> abrufen kannst!
+    </p>
+    <form action="/secret" method="POST">
+      <label for="secret"> Schreibe hier dein Secret </label>
+      <textarea
+        name="secret"
+        id="secret"
+        placeholder="Hier könnte Ihr secret stehen! pssst!"
+      ></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+    {% if id %}
+    <p>
+      Der Link zu deinem Secret ist
+      <a href="{{generatedLink}}">{{generatedLink}}</a><br />
+      Bewahre ihn gut auf! Wenn der Link einmal aufgerufen wird, wird er
+      zerstört!
+    </p>
+    {% endif %}
+  </body>
+</html>

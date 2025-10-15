@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Die ECMAScript-Version, in die der Code kompiliert werden soll (modern und kompatibel mit aktuellen Node.js-Versionen)
+    "module": "CommonJS", // Das Modulsystem, das im kompilierten JS verwendet wird (Node.js nutzt CommonJS, es sei denn, du verwendest ES-Module mit "type": "module" in package.json)
+    "rootDir": "./src", // Das Verzeichnis, in dem dein TypeScript-Quellcode liegt
+    "outDir": "./dist", // Das Verzeichnis, in das der kompilierte JavaScript-Code geschrieben wird
+    "strict": true, // Aktiviert alle strengen Typüberprüfungsoptionen (sehr empfohlen!)
+    "esModuleInterop": true, // Ermöglicht die Kompatibilität von Standardimporten aus CommonJS-Modulen
+    "skipLibCheck": true, // Überspringt die Typüberprüfung von Deklarationsdateien (macht Kompilierung schneller)
+    "forceConsistentCasingInFileNames": true, // Erzwingt konsistente Groß-/Kleinschreibung für Dateinamen
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*.ts"], // Welche Dateien vom Compiler erfasst werden sollen (alle .ts-Dateien im 'src'-Ordner)
+  "exclude": ["node_modules", "dist"] // Welche Dateien ignoriert werden sollen
+}
