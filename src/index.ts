@@ -30,7 +30,7 @@ app.post("/secret", async (req: Request, res: Response) => {
   const secret = req?.body?.secret;
   const id = encodeURI(randomUUID());
   const generatedLink = `${req.protocol}://${req.get("host")}/secret/${id}`;
-  const secretFile = createFile(
+  const secretFile = await createFile(
     path.join(__dirname, "..", "public", "secrets", `${id}.txt`),
     secret
   );
