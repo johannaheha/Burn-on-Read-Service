@@ -4,7 +4,6 @@ import {
   access,
   constants,
   mkdir,
-  appendFile,
   unlink,
   readFile,
 } from "node:fs/promises";
@@ -42,7 +41,7 @@ export async function deleteFile(path: string): Promise<void> {
       await unlink(path);
     }
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }
 

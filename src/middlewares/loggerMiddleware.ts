@@ -2,6 +2,7 @@ import type { Request, Response, NextFunction } from "express";
 import * as path from "node:path";
 import { appendFile } from "node:fs/promises";
 import { pathExists, createDir, createFile } from "../fs/fsCRUDOperations";
+
 const LOG_DIR = path.join(__dirname, "..", "..", "logs"); //PATH/logs
 const LOG_FILE = path.join(LOG_DIR, "log.txt");
 
